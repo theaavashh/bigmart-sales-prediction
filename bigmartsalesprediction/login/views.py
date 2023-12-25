@@ -22,12 +22,13 @@ def login(request):
                return render(request,'login.html',context={'error':warn})
 
         auth_login(request,user)
-        return HttpResponseRedirect('/dashboard')
+        return HttpResponseRedirect('/dataset')
     return render(request,'login.html')
 
 
 
-# def login(request):
-#     return render(request,'login.html')
+def logout(request):
+    request.session.clear()
+    return HttpResponseRedirect('/login')
 
 

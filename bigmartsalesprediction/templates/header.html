@@ -8,6 +8,9 @@
     <title>Landing Page</title>
     <link rel="stylesheet" href="{%static 'css/style.css' %}">
     <script src="https://kit.fontawesome.com/db923893f6.js" crossorigin="anonymous"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
 </head>
 <body>
     <div class="main-container-dashboard">
@@ -16,7 +19,7 @@
             <div class="setting-part">
                 <ul>
                     <li><a href="#"><i class="fa-solid fa-user fa-solid-style"></i>Profile</a></li>
-                    <li><a href="#"><i class="fa-solid fa-right-from-bracket fa-solid-style"></i>Log Out</a></li>
+                    <li><a href="/logout"><i class="fa-solid fa-right-from-bracket fa-solid-style"></i>Log Out</a></li>
                 </ul>
           
             </div>
@@ -25,10 +28,10 @@
                 <div class="setting-part menu-list">
                     <ul>
                         <li><a href="#"><i class="fa-solid fa-house fa-solid-styles"></i>Dashboard</a></li>
-                        <li><a href="#"><i class="fa-solid fa-file-export fa-solid-styles"></i>Data Set</a></li>
-                        <li><a href="#"><i class="fa-solid fa-folder-open fa-solid-styles"></i>Predict</a></li>
+                        <li><a href="/dataset"><i class="fa-solid fa-file-export fa-solid-styles"></i>Data Set</a></li>
+                        <li><a href="/predict"><i class="fa-solid fa-folder-open fa-solid-styles"></i>Predict</a></li>
                         <li><a href="#"><i class="fa-solid fa-chart-pie fa-solid-styles"></i>Visualized</a></li>
-                        <li><a href="#"><i class="fa-solid fa-bullseye fa-solid-styles"></i>Accuracy</a></li>
+                        <li><a href="/accuracy"><i class="fa-solid fa-bullseye fa-solid-styles"></i>Accuracy</a></li>
                       
                     </ul>
                 </div>

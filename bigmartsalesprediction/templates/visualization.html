@@ -1,0 +1,42 @@
+{% include 'header.html'%} 
+
+   <div class="main-dynamic">
+    <h3 class="visualization-title">Visualization</h3>
+
+ 
+        <canvas id="myChart" style="width:100%;max-width:500px" ></canvas> 
+         
+        {{a}}
+   
+      
+
+    </div>
+
+
+    <script>
+    var xValues = ["XGBoost","Random Forest","Linear Regression"];
+    var yValues = {a | safe};
+
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor:  [
+      'rgba(255, 99, 132, 0.3)',
+      'rgba(255, 159, 64, 0.3)',
+      
+      'rgba(75, 192, 192, 0.3)',
+      'rgba(54, 162, 235, 0.3)',
+      'rgba(153, 102, 255, 0.3)',
+      'rgba(201, 203, 207, 0.3)'
+    ],
+      data: yValues
+    }]
+  },
+  
+});
+    </script>
+  
+

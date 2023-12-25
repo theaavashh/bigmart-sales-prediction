@@ -24,6 +24,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/',login,name="login"),
     path('dashboard/',dashboard,name="dashboard"),
-     path('dataset/',dataset,name="dataset"),
+    path('dataset/',dataset,name="dataset"),
+    path('predict/',predict,name="predict"),
+    path('visualization/',visualization),
+    path('logout/',logout),
+    path('header/',header,name="headerset")
+
    
 ]
